@@ -1,0 +1,144 @@
+body h2 {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(257, 40%, 49%);
+    padding: 3em;
+    background-image: url("images/bg-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: "open sans";
+}
+
+header img {
+    width: 15%;
+}
+
+main {
+    display: flex;
+    margin-top: 3em;
+    /*justify-content: space-between; */
+}
+
+.mockup {
+    width: 45%;
+    /*flex-basis: 50%;*/
+}
+
+.content {
+    /*flex-basis: 45%; */
+    width: 40%;
+    margin: 3em auto;
+    
+}
+
+.content h2 {
+    font-size: 35px;
+    color: white;
+    font-family: "Poppins";
+}
+
+.content p {
+    padding: 2em 0em;
+    color: rgb(236, 235, 235);
+    font-size: 14px ;
+    line-height: 25px;
+}
+
+.content button {
+    padding: 1em;
+    border-radius: 30px;
+    width: 40%;
+    color: purple;
+    border: none;
+}
+
+.content button:hover {
+    background-color: purple;
+    color: white;
+}
+
+footer {
+    float: right;
+}
+
+footer .fab {
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+footer .fab:hover {
+    border-color: purple;
+    color: purple;
+}
+
+/* mobile screen sizes*/
+
+@media screen and (max-width:600px) {
+header img {
+    width: 50%;
+}
+main {
+    display: block;
+    margin-top: 2em;
+}
+
+main img {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+    margin: 2em auto;
+}
+
+.content h2 {
+    font-size: 20px;
+}
+
+footer {
+    float: none;
+    text-align: center;
+}
+
+.content button {
+    width: 80%;
+}
+
+}
+
+@media only screen and (max-width:922px) {
+
+main{
+    display: block;
+}
+
+main img{
+    width: 82%;
+}
+
+.content {
+    margin: 3em auto;
+}
+
+.content h2 {
+    font-size: 32px;
+}
+
+.mockup {
+    width: 85%;
+}
+
+header img {
+    width: 32%;
+}
+
+}
